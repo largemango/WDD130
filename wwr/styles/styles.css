@@ -1,12 +1,9 @@
 #content {
   max-width: 1600px;
 }
-nav,
-a,
-#hero-msg h1,
-#hero-msg h4,
+nav a,
+#hero-msg h1, #hero-msg h4,
 .button-box,
-main,
-section {
+main section {
   text-align: center;
 }
