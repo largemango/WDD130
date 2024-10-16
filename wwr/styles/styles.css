@@ -7,3 +7,65 @@ nav a,
 main section {
   text-align: center;
 }
+#background {
+  height: 725px;
+}
+
+body {
+  background-color: #fcfbfb; 
+}
+header {
+  background-color:rgba(92, 32, 22, 0.7);
+}
+nav a:hover {
+  background-color: rgb(122, 32, 32);
+}
+.book, .join {
+  background-color: #631a1a; 
+}
+.book:hover, .join:hover {
+  background-color: #8e2929; 
+}
+#background {
+  background-color: #6b2727; 
+}
+.msg {
+  background-color: #5c2727; 
+}
+footer {
+  background-color: #612424; 
+}
+.book, .join {
+  background-color: rgb(136, 49, 49);
+  color: #d9c2a3;
+}
+.msg h2 {
+  background-color: rgb(129, 113, 113);
+  color: #d9c2a3;
+}
+.msg p {
+  background-color: rgb(158, 129, 129);
+  color: #d9c2a3;
+}
+footer a {
+  background-color: rgb(156, 118, 118);
+  color: #d9c2a3;
+}
+footer a:hover {
+  background-color: rgb(153, 121, 121);
+  color: #d9c2a3;
+}
+.icon {
+  width: 80px;
+}
+nav a {
+  text-align: center;
+  color: #fcfbfb;
+  text-decoration: none;
+}
+footer p {
+  font-size: 1.2em;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
