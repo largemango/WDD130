@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Rock+Salt&display=swap');
 #content {
   max-width: 1600px;
 }
@@ -68,4 +69,175 @@ footer p {
 }
 footer p a:hover {
   text-decoration: underline;
+}
+/* Simple Reset */
+body {
+  background-color: #fcfbfb;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Header */
+#logo_link {
+  padding-top: 5px;
+}
+
+nav a {
+  padding: 35px;
+}
+
+/* Hero Section */
+.home-title {
+  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.book, .join {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: #631a1a;
+  color: #d9c2a3;
+}
+
+.book:hover, .join:hover {
+  background-color: #8e2929;
+}
+
+/* Features */
+.card-img {
+  border: 10px solid #d9c2a3;
+}
+
+main section img {
+  box-sizing: border-box;
+}
+
+.icon {
+  padding-top: 10px;
+}
+
+/* Message Section */
+.msg {
+  background-color: #6f7364;
+  padding: 35px;
+  line-height: 1.5em;
+}
+
+.msg p {
+  padding-bottom: 15px;
+  font-size: 0.8em;
+}
+
+/* Footer */
+footer {
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+
+footer .social img {
+  padding-top: 15px;
+}
+/* Simple Reset */
+body {
+  background-color: #fcfbfb;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Header */
+header {
+  padding: 20px 0; /* Add top and bottom padding */
+  text-align: center; /* Center the header content */
+}
+
+#logo_link {
+  padding-top: 5px;
+}
+
+nav {
+  margin-top: 10px; /* Add some space between the logo and nav */
+}
+
+nav a {
+  padding: 15px 20px; /* Add padding to navigation links for better spacing */
+  text-decoration: none; /* Remove underline from links */
+  color: #fcfbfb; /* Text color for nav links */
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+nav a:hover {
+  background-color: rgb(122, 32, 32); /* Change background on hover */
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  height: 1000px; /* Adjust height as needed */
+  text-align: center;
+}
+
+#hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero-msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.home-title {
+  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+  font-size: 2em; /* Headline font size */
+  margin-top: 10px; /* Add margin above title */
+}
+
+/* Adjust button styles */
+.button-box {
+  margin-top: 20px;
+}
+
+.book, .join {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 18px; /* Button font size */
+  padding: 15px 30px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #631a1a;
+  color: #d9c2a3;
+}
+
+.book:hover, .join:hover {
+  background-color: #8e2929; /* Hover color for buttons */
+}
+
+/* Additional styles can remain as previously defined */
+.logo {
+  position: absolute; /* Positions the logo absolutely within the parent */
+  top: 10px; /* Adjusts the distance from the top */
+  left: 10px; /* Adjusts the distance from the left */
+  width: 100px; /* Set the desired width for your logo */
+  height: auto; /* Maintains the aspect ratio */
+  z-index: 1000; /* Ensures the logo is on top of other elements */
 }
