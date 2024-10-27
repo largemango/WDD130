@@ -1,0 +1,293 @@
+/* CSS - Name: "positionstyles.css" */
+/* Activity 1 styles */
+.content1 {
+    /* This is the parent of the activity 1 boxes. */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+  .red1 { 
+    width: 100px; 
+    height: 100px; 
+    background-color: red; 
+    grid-column: 1/3;
+  } 
+  .green1 {
+    width: 100px; 
+    height: 100px; 
+    background-color: green; 
+  
+  } 
+  .yellow1 {
+    width: 100px; 
+    height: 100px; 
+    background-color: gold; 
+  } 
+  .blue1 {
+    width: 100px; 
+    height: 100px; 
+    background-color: blue; 
+    grid-column: 1/3; 
+  } 
+  /* Activity 2 styles */ 
+  .content2 {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+}
+
+.red2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.green2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top: 30px; /* Adjust to overlap as needed */
+    left: 30px;
+}
+
+.yellow2 {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    position: absolute;
+    top: 60px; /* Adjust to overlap as needed */
+    left: 60px;
+}
+
+.blue2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 90px; /* Adjust to overlap as needed */
+    left: 90px;
+}
+
+  /* Activity 3 styles */ 
+  .content3 {
+    /* Container to stack the boxes */
+    width: 300px; /* Adjust as needed */
+    height: auto;
+}
+
+.red3, .green3, .yellow3, .blue3 {
+    width: 100%; /* Full width of the container */
+    height: 100px; /* Height for each box */
+}
+
+.red3 {
+    background-color: red;
+}
+
+.green3 {
+    background-color: green;
+}
+
+.yellow3 {
+    background-color: gold;
+}
+
+.blue3 {
+    background-color: blue;
+}
+
+  /* Activity 4 styles */ 
+  .content4 {
+    display: flex;
+    width: 300px; /* Adjust container width as needed */
+    height: 400px; /* Set the desired height */
+}
+
+.red4 {
+    width: 50%; /* Take half the container width */
+    height: 100%; /* Full height */
+    background-color: red;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Take half the container width */
+    height: 100%; /* Full height */
+}
+
+.green4, .yellow4, .blue4 {
+    width: 100%; /* Full width of the right column */
+    height: 33.33%; /* Divide the height equally */
+}
+
+.green4 {
+    background-color: green;
+}
+
+.yellow4 {
+    background-color: gold;
+}
+
+.blue4 {
+    background-color: blue;
+}
+
+  /* Activity 5 styles */ 
+  .content5 {
+    /* Parent container to hold all boxes */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 400px;
+}
+
+.red5 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / 2;
+    background-color: red;
+}
+
+.green5 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: green;
+}
+
+.yellow5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: gold;
+    text-align: center;
+    padding: 10px;
+}
+
+.blue5 {
+    grid-column: 1 / span 3;
+    grid-row: 3 / 4;
+    background-color: blue;
+}
+
+  /* Activity 6 styles */ 
+  .content6 {
+    /* Relative positioning to serve as a reference point for absolute positioning of child elements */
+    position: relative;
+    width: 400px;  /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+}
+
+.red6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.blue6 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.green6 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.yellow6 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 100px;
+    height: 200px;
+    background-color: gold;
+}
+
+  
+  
+  /* Do not make any changes below here */
+  .activity {
+    width: 70%; 
+    margin: 20px auto; 
+    font-family: Arial, sans-serif; 
+    border: 1px solid black; 
+    padding: 10px; 
+    clear:both; 
+    overflow: auto;
+  } 
+  
+  .hint {
+    border: 1px solid grey;
+    background: #e0e0e0;
+    padding: .5em;
+    position: relative;
+    margin: 1em 0;
+  }
+  .hint h3 {
+    margin: 0;
+  }
+  .hint:hover {
+    background: #d0d0d0;
+  }
+  .hint > div {
+    display: none;
+  }
+  
+  .hint input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .hint input[type=checkbox]:checked ~ div {
+    display: block;
+  }
+  
+  .hint i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 10px;
+    top: -3px;
+  }
+  .hint i:before, .hint i:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 3px;
+    height: 9px;
+  }
+  .hint i:before {
+    transform: translate(2px, 0) rotate(45deg);
+  }
+  .hint i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+  }
+  
+  .hint input[type=checkbox]:checked ~ i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+  }
+  .hint input[type=checkbox]:checked ~ i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+  }
+  .hint a {
+    position: relative;
+    z-index: 1;
+  }
