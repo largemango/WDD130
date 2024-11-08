@@ -396,3 +396,108 @@ space-around;
 
   }
 }
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+header a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  text-align: center;
+}
+
+#hero-box img {
+  width: 100%;
+  height: auto;
+}
+
+#hero-msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.button-box .book {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Main Content */
+.content-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 30%;
+  border-radius: 5px;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p, footer a {
+  color: #fff;
+  margin: 5px 0;
+}
+
+.social img {
+  width: 30px;
+  margin: 0 10px;
+}
