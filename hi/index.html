@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Embedded CSS */
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .5em;
+            display: none;      
+        }
+        .moveDown {
+            margin-top: 3em;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea, button {
+            padding: 0.5em;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <!-- Navigation links -->
+        </nav>
+    </header>
+    <main>
+        <div id="feedback"></div>
+        <form>
+            <label for="user_name">Your Name</label>
+            <input type="text" id="user_name" name="user_name" required>
+
+            <label for="user_email">Your Email</label>
+            <input type="email" id="user_email" name="user_email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 White Water Rafting</p>
+    </footer>
+    <script>
+        // Feedback functionality
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+
+        formElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = `Hello ${formElement.user_name.value}! Thank you for your message. We will get back with you as soon as possible!`;
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
