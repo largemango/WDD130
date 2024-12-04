@@ -1,169 +1,190 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-:root {
-  /* change the values below to your colors from your palette */
-  --primary-color: #BCD0C7;
-  --secondary-color: #548492;
-  --accent1-color: #799b72;
-  --accent2-color: rgba(163, 95, 95, 0.918);
-
-  /* change the values below to your chosen font(s) */
-  --heading-font: "Bebas Neue", sans-serif;
-  --paragraph-font: "Roboto", sans-serif;
-
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
-}
-img {
-  display: block;
-  margin: 0 auto;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
-}
-
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
-}
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
-}
-.colors th {
-  background-color: #999;
-}
-.colors td {
-  width: 25%;
-  height: 3em;
-}
-
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2 {
-  background-color: var(--accent2-color);
-}
-
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav {
-  list-style-type: none;
+  font-family: Arial, sans-serif;
   display: flex;
+  background-color: #f8f9fa; /* Light gray for background */
+  color: #333;
 }
-nav a {
-  padding: 1em;
-  min-width: 120px;
+
+.sidebar {
+  width: 250px; /* Fixed width */
+  background-color: #1e1e2d; /* Dark sidebar background */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar .logo img {
+  width: 120px; /* Adjust logo size */
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  text-align: left;
+  width: 100%;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a {
   text-decoration: none;
-  padding: 10px;
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.sitemap {
+.sidebar ul li:hover {
+  background-color: #2e2e3d; /* Hover effect for sidebar items */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header .user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for card */
+}
+
+header .user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ddd; /* Subtle border around profile image */
+}
+
+header .user-info div span:first-child {
+  font-weight: bold;
+}
+
+header .user-info div span:last-child {
+  color: #555;
+  font-size: 14px;
+}
+
+.dashboard {
   display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.sitemap > div {
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
   text-align: center;
-}
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.top {
-  grid-area: top;
-  border-left: 1px solid;
+.card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
 }
 
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
+.card strong {
+  font-size: 18px;
+  color: #333;
 }
 
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
+.card:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sales-performance,
+.popular-categories {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sales-performance h3,
+.popular-categories h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.sales-performance img,
+.popular-categories img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.recent-customers {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recent-customers h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.recent-customers img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+* {
+  margin: 0;
+  padding: 10px; /* Added padding for all elements */
+  box-sizing: border-box;
+}
+.container {
+  padding: 10px; /* Apply padding to the main containers */
 }

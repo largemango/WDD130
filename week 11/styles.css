@@ -1,0 +1,17 @@
+section {
+    width: 50%;
+    border: 1px solid;
+  } 
+  .poem {
+    display: flex;
+    flex-wrap: wrap; /* Allow sections to wrap to the next line if needed */
+  }
+  
+  .block1, .block2, .block3, .block4 {
+    width: 50%; /* Ensure each section takes up half the width */
+  }
+  
+  .block1 p, .block2 p, .block3 p, .block4 p {
+    display: inline-block; /* Make lines display inline */
+    white-space: nowrap; /* Prevent line breaks within lines */
+  }
