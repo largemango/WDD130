@@ -1,0 +1,99 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #004488;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a.active {
+    text-decoration: underline;
+}
+
+.nav a:hover {
+    color: #ffcc00;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #004488;
+}
+
+.review {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.review h3 {
+    font-size: 1.5rem;
+    color: #004488;
+}
+
+.review p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.review strong {
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
